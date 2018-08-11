@@ -94,6 +94,17 @@ export const NavSearch = styled.input.attrs({
     width: 160px;
   }
 `
+export const SearchInfo = styled.div`
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 240px;
+  padding: 0 20px;
+  height: 100px;
+  background: yellow;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2)
+`
+
 export const Addition = styled.div`
   position: absolute;
   right: 0;
