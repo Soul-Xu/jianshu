@@ -9,9 +9,42 @@ import { HeaderWrapper,
          SearchWrapper,
          NavSearch,
          SearchInfo,
+         SearchInfoTitle,
+         SearchInfoSwitch,
+         SearchInfoItem,
+         SearchInfoList,
          Addition,
          Button,
 } from './style'
+
+const getListArea = (show) => {
+  if(show) {
+    return (
+      <SearchInfo>
+        <SearchInfoTitle>
+          热门搜索
+          <SearchInfoSwitch>
+            <i></i>
+            换一批
+          </SearchInfoSwitch>
+        </SearchInfoTitle>
+        <SearchInfoList>
+          <SearchInfoItem>简书</SearchInfoItem>
+          <SearchInfoItem>生活</SearchInfoItem>
+          <SearchInfoItem>教育</SearchInfoItem>
+          <SearchInfoItem>考研</SearchInfoItem>
+          <SearchInfoItem>职场</SearchInfoItem>
+          <SearchInfoItem>军事</SearchInfoItem>
+          <SearchInfoItem>情感</SearchInfoItem>
+          <SearchInfoItem>娱乐</SearchInfoItem>
+        </SearchInfoList>
+      </SearchInfo>
+    )
+  }
+  else {
+
+  }
+}
 
 class Header extends Component {
   render() {
@@ -37,7 +70,7 @@ class Header extends Component {
               ></NavSearch>
             </CSSTransition>
                 <i className={this.props.focused ? 'focused iconfont': 'iconfont'}>&#xe60d;</i>
-            <SearchInfo></SearchInfo>
+            {getListArea(this.props.focused)}
           </SearchWrapper>
         </Nav>
         <Addition>

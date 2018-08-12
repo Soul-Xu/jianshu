@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './style.js'
-import './statics/iconfont/iconfont'
-import App from './App'
+import './statics/iconfont/iconfont.js'
+import App from './App.js'
 
 ReactDOM.render(
   <App />, 
