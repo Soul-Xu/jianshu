@@ -39,7 +39,7 @@ class Header extends Component {
             热门搜索
             <SearchInfoSwitch
             onClick={() => handelChangePage(page, totalPage)}>
-              <i></i>
+              <i className="iconfont spin">&#xe851;</i>
               换一批
             </SearchInfoSwitch>
           </SearchInfoTitle>
@@ -77,7 +77,7 @@ class Header extends Component {
                 onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
-                <i className={focused ? 'focused iconfont': 'iconfont'}>&#xe60d;</i>
+                <i className={focused ? 'focused iconfont zoom': 'iconfont zoom'}>&#xe60d;</i>
             {this.getListArea()}
           </SearchWrapper>
         </Nav>
