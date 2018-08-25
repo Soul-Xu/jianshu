@@ -15,7 +15,8 @@ export default class Home extends Component {
       <HomeWrapper>
         <HomeLeft>
           <img className='banner-img'
-          src="//upload.jianshu.io/admin_banners/web_images/4419/31f60ec4cc01cfe02c5bc09bff208d58f2799c3e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540" />
+          src="//upload.jianshu.io/admin_banners/web_images/4419/31f60ec4cc01cfe02c5bc09bff208d58f2799c3e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" 
+          alt="" />
           <Topic />
           <List />
         </HomeLeft>
