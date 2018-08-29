@@ -47,5 +47,31 @@
   }, {
     "id": 5,
     "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+  }],
+  "writerList": [{
+    "id": 1,
+    "imgUrl": "//upload.jianshu.io/users/upload_avatars/4287007/b7b9c810-069e-4385-aec7-1823e94ee43d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+    "title": "辉宗聊绘画",
+    "desc": "写了158.1k字 * 1.8k喜欢"
+  }, {
+    "id": 2,
+    "imgUrl": "//upload.jianshu.io/users/upload_avatars/3343569/93161bfa-dda9-49ee-88e1-a85ec4227232.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+    "title": "吴晓布",
+    "desc": "写了558.3k字 * 13.6k喜欢"
+  }, {
+    "id": 3,
+    "imgUrl": "//upload.jianshu.io/users/upload_avatars/7663825/7c28763e-002b-4e89-8dea-5b8da210ef2c.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+    "title": "名贵的考拉熊",
+    "desc": "写了222.8k字 * 15.6k喜欢"
+  }, {
+    "id": 4,
+    "imgUrl": "//upload.jianshu.io/users/upload_avatars/6467455/452f4532-4e3d-45fe-a1c5-da4d7cf5ad6f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+    "title": "楠溪陈酿",
+    "desc": "写了386.1k字 * 280喜欢"
+  }, {
+    "id": 5,
+    "imgUrl": "//upload.jianshu.io/users/upload_avatars/22609/11963c7e-2407-4b7d-bae1-8ff6797de722.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+    "title": "途可小姐",
+    "desc": "写了81.1k字 * 1.1k喜欢"
   }]
 }

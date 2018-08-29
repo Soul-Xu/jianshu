@@ -84,9 +84,75 @@ export const RecommendItem = styled.div`
 `
 export const WriterWrapper = styled.div`
    width: 278px;
-   height: 300px;
    line-height: 300px;
-   border: 1px solid #dcdcdc;
    border-radius: 3px;
    text-align: center;
 `
+export const WriterHeader = styled.div`
+  overflow: hidden;
+  width: 278px;
+  height: 60px;
+  line-height: 60px;  
+  border-bottom: 1px solid #dcdcdc;
+`
+export const WriterRecommend = styled.div`
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  float: left
+  font-size: 14px;
+`
+export const WriterInfoSwitch = styled.div`
+  width: 100px;
+  height: 30px;
+  line-height: 60px;
+  float: right;
+  font-size: 14px;
+`
+
+export const WriterInfoList = styled.div`
+  overflow: hidden;
+  width: 278px;
+`
+
+export const WriterInfoListItem = styled.div`
+  overflow: hidden;
+  padding: 5px;
+  margin-top: 5px;
+  width: 278px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  .writer-pic {
+    width: 50px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    display: block;
+    float: left;
+  }
+  .writer-focus {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #42c02e;
+  }
+`
+
+export const WriterInfoListInfo = styled.div`
+  width: 150px;
+  padding-left: 15px;
+  padding-top: 10px;
+  float: left;
+  text-align: left;
+  .title {
+    line-height: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  .desc {
+  line-height: 24px;
+    font-size: 13px;
+    color: #999;
+  }
+`
+
+
