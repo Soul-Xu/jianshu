@@ -87,6 +87,8 @@ export const WriterWrapper = styled.div`
    line-height: 300px;
    border-radius: 3px;
    text-align: center;
+   padding-bottom: 5px;
+   
 `
 export const WriterHeader = styled.div`
   overflow: hidden;
@@ -122,7 +124,7 @@ export const WriterInfoListItem = styled.div`
   width: 278px;
   height: 50px;
   line-height: 50px;
-  font-size: 16px;
+  font-size: 14px;
   .writer-pic {
     width: 50px;
     border: 1px solid #ddd;
@@ -145,7 +147,7 @@ export const WriterInfoListInfo = styled.div`
   text-align: left;
   .title {
     line-height: 20px;
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
   }
   .desc {
@@ -155,4 +157,17 @@ export const WriterInfoListInfo = styled.div`
   }
 `
 
-
+export const MoreInfo = styled.div`
+  box-sizing: border-box;
+  width: 278px;
+  height: 40px;
+  line-height: 30px;
+  margin-top: 10px;
+  padding: 7px;
+  text-align: center;
+  font-size: 13px;
+  color: #787878;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+`
