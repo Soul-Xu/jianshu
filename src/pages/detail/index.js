@@ -12,3 +12,5 @@ export default class Detail extends Component {
     )
   }
 }
+
+// 修改
