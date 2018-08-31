@@ -171,3 +171,15 @@ export const MoreInfo = styled.div`
   border-radius: 4px;
   background-color: #f7f7f7;
 `
+export const MoreList = styled.div`
+  margin-top: 10px;
+  width: 625px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 30px;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 16px;
+  color: #7c7c7c;
+`

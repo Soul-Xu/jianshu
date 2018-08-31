@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { 
         ListItem,
-        ListInfo
+        ListInfo,
+        MoreList
        } from '../style'
 
 class List extends Component {
@@ -26,6 +27,7 @@ class List extends Component {
             )
           })
         }
+        <MoreList>查看更多</MoreList>
       </div>
     )
   }
