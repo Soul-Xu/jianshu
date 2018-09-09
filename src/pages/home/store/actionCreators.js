@@ -10,26 +10,31 @@ const changeHomeDate = (result) => ({
   writerList: result.writerList
 })
 
-const addHomeList = (list) => ({
+const addHomeList = (list, nextPage) => ({
   type: constants.ADD_ARTICLE_LIST,
-  list: fromJS(list)
+  list: fromJS(list),
+  nextPage
 })
 
-export const getHomeInfo = (page) => {
+export const getHomeInfo = () => {
   return (dispatch) => {
-    axios.get('/api/home.json?page=' + page).then((res) => {
+    axios.get('/api/home.json').then((res) => {
       const result = res.data
       dispatch(changeHomeDate(result))
     })
   }
 }
 
-export const getMoreList = () => {
+export const getMoreList = (page) => {
   return (dispatch) => {
-    axios.get('/api/homeList.json').then((res) => {
+    axios.get('/api/homeList.json?page=' + page).then((res) => {
       const result = res.data.data
-      console.log(result)
-      dispatch(addHomeList(result))
+      dispatch(addHomeList(result, page + 1))
     })
   }
 }
+
+export const toggleTopShow = (show) => ({
+  type: constants.TOGGLE_SCROLL_TOP,
+  show
+})

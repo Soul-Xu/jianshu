@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import {
       MoreInfo
       } from '../style'
 
-export default class More extends Component {
+export default class More extends PureComponent {
   render() {
     return (
       <MoreInfo>
