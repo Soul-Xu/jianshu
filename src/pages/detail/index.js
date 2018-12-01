@@ -9,6 +9,7 @@ import {
 
 class Detail extends PureComponent {
   render() {
+    console.log(this.props)
     return (
       <DetailWrapper>
         <Header>{this.props.title}</Header>
@@ -21,15 +22,15 @@ class Detail extends PureComponent {
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapState = (state) => ({
   title: state.getIn(['detail', 'title']),
   content: state.getIn(['detail', 'content'])
 })
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatch = (dispatch) => ({
   getDetail() {
     dispatch(actionCreators.getDetail())
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Detail)
+export default connect(mapState, mapDispatch)(Detail)
