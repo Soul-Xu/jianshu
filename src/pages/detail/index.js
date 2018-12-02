@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import { actionCreators } from './store'
 import {
          DetailWrapper,
@@ -9,6 +10,10 @@ import {
 
 class Detail extends PureComponent {
   render() {
+    // console.log(this.props.title)
+    // console.log(this.props.content)
+    // console.log(this.props)
+    // console.log(this.state)
     return (
       <DetailWrapper>
         <Header>{this.props.title}</Header>
@@ -17,19 +22,19 @@ class Detail extends PureComponent {
     )
   }
   componentDidMount() {
-    this.props.getDetail()
+    this.props.getDetail(this.props.match.params.id)
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapState = (state) => ({
   title: state.getIn(['detail', 'title']),
   content: state.getIn(['detail', 'content'])
 })
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatch = (dispatch) => ({
   getDetail() {
-    dispatch(actionCreators.getDetail())
+    dispatch(actionCreators.getDetail());
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Detail)
+export default connect(mapState, mapDispatch)(withRouter(Detail))
