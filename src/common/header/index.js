@@ -90,7 +90,7 @@ class Header extends Component {
           </SearchWrapper>
         </Nav>
         <Addition>
-          <Link to='./write'>
+          <Link to='/write'>
             <Button className='writting'>
               <i className="iconfont">&#xe600;</i>
               写文章

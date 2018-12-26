@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
 class Write extends PureComponent {
   render() {
     const { loginStatus } = this.props
-    if(!loginStatus) {
+    if(loginStatus) {
       return (
         <div>
-          写文章页面
+          写文章
         </div>
     )} else {
       return <Redirect to="/login"/>
